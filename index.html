@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    /*CSS dos blocos */
+    body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.5;
+      color: #f5f6f7;
+    }
+
+    @keyframes inicializar {
+      from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .margin {
+      margin-bottom: 30px;
+    }
+
+    .bg-1 {
+      background-color: #FAD4D4;
+      color: #555555;
+    }
+
+    .bg-2 {
+      background-color: #EF9F9F;
+      color: #ffffff;
+    }
+
+    .bg-3 {
+      background-color: #FAD4D4;
+      color: #555555;
+    }
+
+    .bg-4 {
+      background-color: #2f2f2f;
+      color: #fff;
+    }
+
+    .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+    }
+
+    h3 {
+      font-style: italic;
+      font-weight: bolder;
+    }
+
+    section {
+      animation: inicializar .7s forwards;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      padding: 30px 15%;
+      background-color: #EF9F9F;
+    }
+
+    section img {
+      height: 400px;
+      border-radius: 100%;
+      border: 2px solid;
+      margin-right: 40px;
+    }
+
+    section div h2 {
+      margin-left: 20px;
+      font-size: 40px;
+    }
+
+    section p {
+      
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+
+    section button {
+      color: #555555;
+      background-color: #FAD4D4;
+      height: 50px;
+      width: 180px;
+      font-size: 18px;
+      border: none;
+      border-radius: 26px;
+      align-items: center;
+    }
+
+    section div button:hover {
+      background-color: #EF9F9F;
+      border: 3px solid;
+      transition: 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">RenataPeixoto </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="Projetos">Projetos</a></li>
+          <li><a href="#">Fotos</a></li>
+          <li><a href="#">Fale Comigo </a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- First Container -->
+  <div class="container-fluid bg-1 text-center">
+    <!-- <h3 class="margin">Quem sou eu ?</h3>-->
+    <img src="img/94880845_2308253216146275_4682999973237751808_n.png" class="img-responsive img-circle margin"
+      style="display:inline" alt="foto" width="350" height="350" ;>
+    <h1 class="title bg-text">Olá, Meu nome é Renata, seja bem vinda(o) ao meu Portifolio!</h1>
+    <span class="descricao">FRONT-END</span>
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <!--sobre mim-->
+  <section>
+    <img src="./img/WhatsApp_Image_2023-05-02_at_21.46.19-removebg.png">
+    <div>
+      <h2>Sobre min</h2>
+      <p>Eu sou Programadora Front End, tenho conhececimento em HTML, CSS, JavaScrip, Bootstrap, Materialize, e em
+        desenvolvimento Mobile Java.</p>
+      <button>Entre em Contato</button>
+    </div>
+  </section>
+  <div>
+    <p></p>
+  </div>
+  <!--carrocseu-->
+
+  <section id="tranding">
+    <div class="container">
+      <div class="swiper tranding-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="./img/Agendamentolivroteca.png" alt="Tranding">
+            </div>
+            <div class="tranding-slide-content">
+              <div class="tranding-slide-content-bottom">
+                <h2 class="food-name">
+
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="img/AjusteSalarial.png" alt="Tranding">
+            </div>
+            <div class="tranding-slide-content">
+
+              <div class="tranding-slide-content-bottom">
+                <h2 class="food-name">
+
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="img/CalculodeContaRestaurante.png" alt="Tranding">
+            </div>
+            <div class="tranding-slide-content">
+
+              <div class="tranding-slide-content-bottom">
+                <h2 class="food-name">
+
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="img/CompraPizza.png" alt="Tranding">
+            </div>
+            <div class="tranding-slide-content">
+              <div class="tranding-slide-content-bottom">
+                <h2 class="food-name">
+
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="img/MercadoVirtual.png" alt="Tranding">
+            </div>
+            <div class="tranding-slide-content">
+
+              <div class="tranding-slide-content-bottom">
+                <h2 class="food-name">
+
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="img/QuizzTransito.png" alt="Tranding">
+            </div>
+            <div class="tranding-slide-content">
+
+              <div class="tranding-slide-content-bottom">
+                <h2 class="food-name">
+
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="img/QuzzLol.png" alt="Tranding">
+            </div>
+            <div class="tranding-slide-content">
+              <div class="tranding-slide-content-bottom">
+                <h2 class="food-name">
+
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+        </div>
+
+        <div class="tranding-slider-control">
+          <div class="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div class="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div>
+
+  </div>
+  <div>
+    <p></p>
+  </div>
+  <div class="container-fluid bg-3 text-center">
+    <h3 class="margin">Onde me encontar?</h3><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p>Você pode me encontra no Instagram.</p>
+        <img class="rounded-circle" src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"
+          alt="Generic placeholder image" width="140" height="140">
+        <p><a class="btn btn-secondary" href="https://www.instagram.com/renata_yurley_/" target="black" role="button">Ir
+            para página &raquo;</a></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Você pode me encontra no Facebook.</p>
+        <img class="rounded-circle" src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"
+          alt="Generic placeholder image" width="140" height="140">
+        <p><a class="btn btn-secondary" href="https://www.facebook.com/RenataSinna" target="black" role="button">Ir para
+            página &raquo;</a></p>
+      </div>
+      <div class="col-sm-4">
+        <p>Você pode me encontra no Twitter.</p>
+        <img class="rounded-circle" src="https://img.icons8.com/bubbles/344/twitter-circled.png"
+          alt="Generic placeholder image" width="140" height="140">
+        <p><a class="btn btn-secondary" href="https://twitter.com/parksuji_rw" target="black" role="button">Ir para
+            página &raquo;</a></p>
+
+      </div>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
